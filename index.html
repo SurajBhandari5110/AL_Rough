@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=".NET Custom Development | Custom Software Development | Full stack Development">
+  <meta name="keywords" content=".NET Custom Software Development">
+  <meta name="author" content="elemis">
+  <title>Life at Acelucid</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <link rel="stylesheet" href="assets/css/style.css"><link rel="preload" href="assets/css/fonts/thicccboi.css" as="style" onload="this.rel='stylesheet'">
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+  
+       .navbar-brand {
+           font-weight: bold;
+       }
+       .hero-section {
+           position: relative;
+           text-align: center;
+           color: white;
+       }
+       .hero-section img {
+           width: 100%;
+           height: auto;
+       }
+       .hero-section .hero-text {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+       }
+       .hero-section h1 {
+           font-size: 3rem;
+           margin-bottom: 20px;
+       }
+       .hero-section p {
+           font-size: 1.5rem;
+       }
+       .feature-icon {
+           font-size: 3rem;
+           color: #007bff;
+       }
+       .event-img {
+           width: 100%;
+           height: auto;
+       }
+       
+       .section-title {
+           font-size: 2.5rem;
+           margin-bottom: 30px;
+           text-align: center;
+       }
+       .card-title {
+           font-size: 1.25rem;
+           font-weight: bold;
+       }
+       .card-text {
+           font-size: 1rem;
+       }
+       .feature-icon {
+           font-size: 3rem;
+           color: #007bff;
+           margin-bottom: 20px;
+       }
+       .values-section h4 {
+           font-size: 1.5rem;
+           margin-top: 20px;
+       }
+       .values-section p {
+           font-size: 1rem;
+       }
+       .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .award-img {
+        width: 100%;
+        height: auto;
+    }
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }
+            .hover-text {
+                color: red;
+                text-align: center;
+            }
+            .award-wrapper {
+                position: relative;
+                overflow: hidden;
+            }
+            .award-wrapper img {
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: opacity 0.3s ease;
+            }
+            .award-wrapper::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .award-wrapper:hover::after {
+                opacity: 1;
+            }
+            .award-wrapper[data-prize="iphone"]::after {
+                background-image: url('https://placehold.co/600x400?text=iPhone+Prize');
+            }
+            .award-wrapper[data-prize="macbook"]::after {
+                background-image: url('https://placehold.co/600x400?text=MacBook+Prize');
+            }
+            .award-wrapper[data-prize="trip"]::after {
+                background-image: url('https://placehold.co/600x400?text=Trip+Prize');
+            }
+            .award-wrapper[data-prize="watch"]::after {
+                background-image: url('https://placehold.co/600x400?text=Watch+Prize');
+            }
+            .award-wrapper[data-prize="tablet"]::after {
+                background-image: url('https://placehold.co/600x400?text=Tablet+Prize');
+            }
+            .award-wrapper[data-prize="giftcard"]::after {
+                background-image: url('https://placehold.co/600x400?text=Gift+Card+Prize');
+            }
+        
+    
+ </style>
+ </head>
+<body>
+   
+ <div class="content-wrapper">  <header class="wrapper bg-soft-primary">
+    <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+      <div class="container flex-lg-row flex-nowrap align-items-center">
+        <div class="navbar-brand w-100">
+          <a href="index.html"> <img src="assets/img/logo.svg" srcset="./assets/img/logo.svg 2x" alt="" width="200" />
+          </a>
+        </div>
+        <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+          <div class="offcanvas-header d-lg-none">
+            <h3 class="text-white fs-30 mb-0">Acelucid</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+            <ul class="navbar-nav">
+            
+                <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries</a>
+                  <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                  <li class="mega-menu-content">
+                    <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled text-center">
+             <li class="col"><a class="dropdown-item" href="https://acelucid.com/logistic-and-transpotation.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/9.svg" width="64" height="64" alt=""></div>
+                          <span>Logistics & Transportation</span>
+                        </a>
+                      </li>
+           <li class="col"><a class="dropdown-item" href="https://acelucid.com/healthcare.html">
+                              <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/2.svg" width="64" height="64" alt=""></div>
+                          <span>Healthcare</span>
+                        </a>
+                      </li>
+              
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/education.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/7.svg" width="64" height="64" alt=""></div>
+                          <span>Education</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/finance-and-banking.html">
+                             <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/3.svg" width="64" height="64" alt=""></div>
+                          <span>Finance and Banking</span>
+                        </a>
+                      </li>
+           <li class="col"><a class="dropdown-item" href="https://acelucid.com/ecommerce.html">
+                               <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/1.svg" width="64" height="64" alt=""></div>
+                          <span>eCommerce</span>
+                        </a>
+                      </li>    
+            <li class="col"><a class="dropdown-item" href="https://acelucid.com/iot-industry.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/4.svg" width="64" height="64" alt=""></div>
+                          <span>Internet of Things</span>
+                        </a>
+                      </li>
+             <li class="col"><a class="dropdown-item" href="https://acelucid.com/telecommunications.html">
+                              <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/5.svg" width="64" height="64" alt=""></div>
+                          <span>Telecommunications</span>
+                        </a>
+                      </li>
+                   
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/automotive.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/6.svg" width="64" height="64" alt=""></div>
+                          <span>Automotive</span>
+                        </a>
+                     </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/manufacturing.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/industries/8.svg" width="64" height="64" alt=""></div>
+                          <span>Manufacturing</span>
+                        </a>
+                      </li>                  
+                     
+                    </ul>
+                    <!--/.row -->
+                   </li>
+                  <!--/.mega-menu-content-->
+                </ul>
+                <!--/.dropdown-menu -->
+                </li>
+            <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solutions</a>
+                <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                  <li class="mega-menu-content">
+                    <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled  text-center">
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/artificial-Intelligence-and-machine-learning.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0 text-white" src="assets/img/demos/1.svg" width="64" height="64" alt=""></div>
+                          <span>AI & ML</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/cloud-computing.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/2.svg" width="64" height="64" alt=""></div>
+                          <span>Cloud Computing</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/blockchain.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/3.svg" width="64" height="64" alt=""></div>
+                          <span>Blockchain</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/internet-of-things.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/4.svg" width="64" height="64" alt=""></div>
+                          <span>Internet of Things</span>
+                        </a>
+                      </li>
+             <li class="col"><a class="dropdown-item" href="https://acelucid.com/augmented-reality-and-virtual-reality.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/5.svg" width="64" height="64" alt=""></div>
+                          <span>AR/VR</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/cybersecurity.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/6.svg" width="64" height="64" alt=""></div>
+                          <span>Cybersecurity</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/devops.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/7.svg" width="64" height="64" alt=""></div>
+                          <span>DevOps</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/web-development.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/8.svg" width="64" height="64" alt=""></div>
+                          <span>Web Development</span>
+                        </a>
+                      </li>
+                      <li class="col"><a class="dropdown-item" href="https://acelucid.com/mobile-development.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/9.svg" width="64" height="64" alt=""></div>
+                          <span>Mobile Development</span>
+                        </a>
+                      </li>
+                   <li class="col"><a class="dropdown-item" href="https://acelucid.com/minimum-viable-product.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/10.svg" width="64" height="64" alt=""></div>
+                          <span>MVP Development</span>
+                        </a>
+                      </li>
+                   <li class="col"><a class="dropdown-item" href="https://acelucid.com/project-management-expertise.html">
+                          <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="assets/img/demos/11.svg" width="64" height="64" alt=""></div>
+                          <span>Project Management Expert</span>
+                        </a>
+                      </li>
+                  
+                   
+                    </ul>
+                    <!--/.row -->
+                  </li>
+                  <!--/.mega-menu-content-->
+                </ul>
+                <!--/.dropdown-menu -->
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="https://acelucid.com/ourwork.html" >Our Work</a>               
+                <!--/.dropdown-menu -->
+              </li>             
+          
+    
+          <li class="nav-item"> <a class="nav-link" href="https://acelucid.com/staff-augmentation.html" >Hire Devs</a>      </li>
+          <li class="nav-item"> <a class="nav-link" href="https://acelucid.com/blogs.html" >Blogs</a>  
+        <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About us</a>
+                <ul class="dropdown-menu mega-menu">
+                  <li class="mega-menu-content">
+                    <div class="row gx-0 gx-lg-3">
+                      <div class="col-lg-4">
+                        <h6 class="dropdown-header"><a class="text-primary" href="https://acelucid.com/about.html">About Acelucid</a></h6>
+                      <ul class="list-unstyled cc-2 pb-lg-1">
+                          <li><a class="dropdown-item" href="https://acelucid.com/what-we-do.html">What We Do</a></li>
+            <li><a class="dropdown-item" href="https://acelucid.com/about.html#core-value">Core Values</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/about.html#our-mission">Our Mission</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/about.html#our-team">Our Team</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/index.html#testimonial">Testimonials</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/contact.html">Contact Us</a></li>
+                        </ul>
+                         <h6 class="dropdown-header mt-lg-6"><a class="text-primary" href="about.html">Our Culture</a></h6>
+                        <ul class="list-unstyled cc-2">
+                          <li><a class="dropdown-item" href="https://acelucid.com/why-choose-us.html">Why Choose Us</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/how-we-do-it.html">How We Do It</a></li><li><a class="dropdown-item" href="https://acelucid.com/life-acelucid.html">Life at Acelucid</a></li>
+            <li><a class="dropdown-item" href="https://acelucid.com/career.php">Career</a></li>
+              
+                        </ul>
+                      </div>
+                      <!--/column -->
+                      <div class="col-lg-8">
+                        <h6 class="dropdown-header"><a class="text-primary" href="https://acelucid.com/services.html">Services</a></h6>
+                        <ul class="list-unstyled cc-3">
+                          <li><a class="dropdown-item" href="https://acelucid.com/services.html#Custom">Custom Software Development</a></li>
+                           <li><a class="dropdown-item" href="https://acelucid.com/services.html#Digital">Digital Transformation Consulting</a></li>
+                          <li><a class="dropdown-item" href="https://acelucid.com/services.html#Quality">Quality Assurance & Testing</a></li>
+                        <li><a class="dropdown-item" href="https://acelucid.com/services.html#Emerging">Emerging Technologies</a></li>
+                      
+                        </ul>
+            
+                      
+                      </div>
+                      <!--/column -->
+                    </div>
+                    <!--/.row -->
+                  </li>
+                  <!--/.mega-menu-content-->
+                </ul>
+                <!--/.dropdown-menu -->
+              </li>
+        
+            </ul>
+            <!-- /.navbar-nav -->
+            <div class="offcanvas-footer d-lg-none">
+              <div>
+                <a href="mailto:hello@acelucid.com" class="link-inverse"><span >hello@acelucid.com</span></a>
+                <br />+91 7338084881 <br /> <nav class="nav social social-white mt-4">
+                  <a href="https://www.linkedin.com/company/acelucid/"><i class="uil uil-linkedin"></i></a>
+                  <a href="mailto:hello@acelucid.com"><i class="uil uil-google"></i></a>
+                </nav>
+                <!-- /.social -->
+              </div>
+            </div>
+            <!-- /.offcanvas-footer -->
+          </div>
+          <!-- /.offcanvas-body -->
+        </div>
+        <!-- /.navbar-collapse -->
+        <div class="navbar-other w-100 d-flex ms-auto">
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+           
+            <li class="nav-item d-none d-md-block">
+              <a href="#" class="btn btn-sm btn-primary rounded" data-bs-toggle="modal" data-bs-target="#modal-signup">Let's Connect</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <button class="hamburger offcanvas-nav-btn"><span></span></button>
+            </li>
+          </ul>
+          <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-other -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#about">
+        About Us
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#work">
+        A Great Place to Work
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#events">
+        Events
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#balance">
+        Corporate and Social Life Balance
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#culture">
+        Our Culture and Values
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#rewards">
+        Rewards
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <section class="hero-section">
+   
+   
+  </section>
+  <section class="py-5" id="about">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-6">
+      <h2 class="section-title">
+       Life at Acelucid
+      </h2>
+      <p>
+       Acelucid focuses on self-development alongside company growth. As a fresher, you will have numerous opportunities to learn from seniors and client projects. This is the best company for someone who loves to learn new things. Every day, we learn something new here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit illo ullam ad molestiae praesentium incidunt labore nulla qui sequi. Magni aliquid adipisci atque architecto facilis ullam officiis aut? Ipsum, necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed ipsa minus natus omnis iusto minima aspernatur aperiam, ad, ipsum id, recusandae fugiat voluptates esse quos perferendis accusantium. Iste enim rerum natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium accusamus a quos quia modi ad odio quaerat sit ducimus? Nisi, temporibus amet doloremque eaque suscipit ab! Molestias nam tempore accusamus magni totam, aliquid assumenda!
+      </p>
+     </div>
+     <div class="col-lg-6">
+      <img alt="Team working together in a modern office environment" class="img-fluid" height="400" src="./assets/img/photos/about2.jpg" width="600"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-5 bg-light" id="work">
+   <div class="container">
+    <h2 class="section-title">
+     A Great Place to Work
+    </h2>
+    <div class="row">
+     <div class="col-md-4 text-center">
+      <i class="fas fa-chalkboard-teacher feature-icon">
+      </i>
+      <h4>
+       Learning Opportunities
+      </h4>
+      <p>
+       Work on diverse projects and learn from experienced seniors and clients.
+      </p>
+     </div>
+     <div class="col-md-4 text-center">
+      <i class="fas fa-users feature-icon">
+      </i>
+      <h4>
+       Team Collaboration
+      </h4>
+      <p>
+       Collaborate with a supportive team that values your input and growth.
+      </p>
+     </div>
+     <div class="col-md-4 text-center">
+      <i class="fas fa-balance-scale feature-icon">
+      </i>
+      <h4>
+       Work-Life Balance
+      </h4>
+      <p>
+       Enjoy a balanced work-life with no extra work on weekends and reasonable workloads.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-5" id="events">
+   <div class="container">
+    <h2 class="section-title">
+     Events
+    </h2>
+    <div class="row">
+     <div class="col-md-4">
+      <div class="card mb-4">
+       <img alt="Hackathon event with participants coding" class="card-img-top event-img" height="300" src="./assets/img/photos/hack.jpg" width="400"/>
+       <div class="card-body">
+        <h5 class="card-title">
+         Hackathon
+        </h5>
+        <p class="card-text">
+         Recently, we had a hackathon where teams competed to create innovative solutions.
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card mb-4">
+       <img alt="Team enjoying a trip to Goa" class="card-img-top event-img" height="300" src="./assets/img/photos/goa1.jpg" width="400"/>
+       <div class="card-body">
+        <h5 class="card-title">
+         Goa Trip
+        </h5>
+        <p class="card-text">
+         Our team recently enjoyed a trip to Goa, fostering team bonding and relaxation.
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card mb-4">
+       <img alt="Team celebrating a festival together" class="card-img-top event-img" height="300" src="./assets/img/photos/cel.png" width="400"/>
+       <div class="card-body">
+        <h5 class="card-title">
+         Festival Celebration
+        </h5>
+        <p class="card-text">
+         We celebrate various festivals together, enhancing our cultural bond and team spirit.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-5 bg-light" id="balance">
+   <div class="container">
+    <h2 class="section-title">
+     Corporate and Social Life Balance
+    </h2>
+    <div class="row">
+     <div class="col-md-6">
+      <p>
+       At Acelucid, we believe in maintaining a healthy balance between corporate responsibilities and social life. Our policies ensure that employees do not have to work extra hours on weekends and are not required to be available after work hours. This approach helps in reducing work stress and promotes a healthier lifestyle. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus autem id quisquam quae aut aliquid ad explicabo nesciunt. Voluptatum quo commodi fugit quisquam unde laudantium vel exercitationem laboriosam sint perferendis, architecto totam eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa tenetur temporibus totam nam quas. Officia exercitationem id laborum distinctio eius.
+      </p>
+     </div>
+     <div class="col-md-6">
+      <img alt="Employees enjoying a balanced work and social life" class="img-fluid" height="400" src="./assets/img/photos/dandiya.png" width="600"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-5" id="culture">
+   <div class="container">
+    <h2 class="section-title">
+     Our Culture and Values
+    </h2>
+    <div class="row">
+     <div class="col-md-6">
+      <p>
+       At Acelucid, our culture is built on a foundation of continuous learning and innovation. We believe in co-creation and collaboration, where our core values of professionalism, respect, perseverance, and integrity shine through in everything we do. With us, you have the opportunity to embark on a journey that’s shaping the world in a fast, innovative, and ever-evolving technological landscape. You will no longer be dreaming of what the future holds – you will be redefining it at a company where you’re empowered to lead and perform at your very best. See for yourself what it means to be part of our team, collaborating across geographies and cultures to make your mark. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe inventore, vitae maiores molestiae natus reiciendis explicabo, ut eum itaque facere, numquam exercitationem molestias dolor ipsa error necessitatibus non totam quibusdam sequi perspiciatis blanditiis beatae ab! Placeat distinctio omnis, incidunt blanditiis sit asperiores suscipit nisi unde rem, esse sapiente pariatur amet?
+      </p>
+     </div>
+     <div class="col-md-6">
+      <img alt="Team collaborating in a modern office setting" class="img-fluid" height="400" src="https://storage.googleapis.com/a1aa/image/nmlv8O1Qw4JmKp1ZJqqYbHIKKTRbJbFdzKbfROrbbP4QqaeTA.jpg" width="600"/>
+     </div>
+    </div>
+    <div class="values-section">
+     <h3 class="mt-5">
+      Our Values
+     </h3>
+     <div class="row">
+      <div class="col-md-6">
+       <h4>
+        Professionalism
+       </h4>
+       <p>
+        We deliver with high standards of excellence and hold each other accountable for the result. We have the needs of our customers at the center of every decision we take. We build trust by delivering on our promises and demonstrating thought leadership.
+       </p>
+      </div>
+      <div class="col-md-6">
+       <h4>
+        Respect
+       </h4>
+       <p>
+        We believe unique and different perspectives and skills create better outcomes. We stand for inclusion, diversity, and promote collaboration. We genuinely listen and care for each other with empathy and authenticity.
+       </p>
+      </div>
+      <div class="col-md-6">
+       <h4>
+        Perseverance
+       </h4>
+       <p>
+        We continually challenge ourselves to be at the forefront of innovation. We tackle the world’s most complex challenges by embracing courage, passion, and grit. We are always in it for the long term and deliver on our commitments with determination and resilience.
+       </p>
+      </div>
+      <div class="col-md-6">
+       <h4>
+        Integrity
+       </h4>
+       <p>
+        We pride ourselves in making transparent, honest, and uncompromising decisions. We demonstrate ethical, responsible, and sustainable practices in everything we do. We win on our own merits and have zero-tolerance for unethical behavior.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-5 bg-light" id="recognition">
+    <div class="container">
+        <h2 class="section-title">Recognized for Excellence</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>We are proud to be recognized as a great place to work by many esteemed publications and organizations. These awards show that Acelucid is a great employer wherever you go – it's a testament to the strength of our shared values, our investment in our people, and our commitment to providing the right work/life balance.</p>
+                <h4>Our latest awards include:</h4>
+                <p style="color:red">Hover on images to see prize</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="iphone">
+                        <img src="https://storage.googleapis.com/a1aa/image/JlcU2VSrparQINaV6HQBkcAO8TsR7fWGfItwcvePrzO7nezPB.jpg" class="card-img-top" alt="Award recognition for America's Best Employers for Diversity 2022 by Forbes">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ace Employee 2024<br>Winner: Akash</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="macbook">
+                        <img src="https://storage.googleapis.com/a1aa/image/YWNir6vSOQ6qINMq26eP8Tx7LEdge3RDAOqJYAFr1vv7Tf5nA.jpg" class="card-img-top" alt="Award recognition for Best workplace in Asia award">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Best Project Manager 2024<br>Winner: Shushivam</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="trip">
+                        <img src="https://storage.googleapis.com/a1aa/image/cfSdSzn5U3ycJKdabVavEAliJzfGZgzDXhNC9KNPz2jyTf5nA.jpg" class="card-img-top" alt="Award recognition for #7 Best Workplace in Asia 2021">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ace Inter 2024<br>Winner: Megha Pandey</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="watch">
+                        <img src="https://storage.googleapis.com/a1aa/image/zRFBPw8SiuqyLFMJpHWfIFlYcTO8Wxcssi4MZtEJEcL4pf8TA.jpg" class="card-img-top" alt="Award recognition for Great place to work certified 2021 in India, Philippines, Malaysia, Bangladesh, Sri Lanka, Indonesia & Thailand">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Best Quality Assurance 2024<br>Winner: Sushant</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="tablet">
+                        <img src="https://storage.googleapis.com/a1aa/image/hvfGDFiLSa2gLiWmADWJip1bBzf1rmJ33Zmx1WlFQSp5Tf5nA.jpg" class="card-img-top" alt="Award recognition for HR Excellence awards: Excellence in TA and Diversity and Inclusion">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">HR Excellence awards: Excellence in TA and Diversity and Inclusion</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="award-wrapper" data-prize="giftcard">
+                        <img src="https://storage.googleapis.com/a1aa/image/fGKv8TEyLOSWWS0UvBDYUnLNQd3efUjBgmNd4WCe6SQEQ9zPB.jpg" class="card-img-top" alt="Award recognition for HRD World Congress D&I awards 2021: Excellence in Diversity and Inclusion">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">HRD World Congress D&I awards 2021: Excellence in Diversity and Inclusion</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5" id="future">
+    <div class="container">
+        <h2 class="section-title">Be Part of the Future</h2>
+        <p>Working with us at Acelucid means you get to be part of shaping the future. As a tech firm that is at the forefront of innovation, we are committed to using the latest technologies and frameworks to drive change and make a significant impact. Our team is skilled in:</p>
+        <ul>
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Blockchain Technology</li>
+            <li>Cloud Computing and DevOps</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Big Data and Analytics</li>
+            <li>Cybersecurity</li>
+            <li>Augmented Reality (AR) and Virtual Reality (VR)</li>
+            <li>5G and Next-Generation Networks</li>
+            <li>Robotic Process Automation (RPA)</li>
+            <li>Quantum Computing</li>
+        </ul>
+        <p>We are not just adopting new technologies; we are pioneering them. By joining Acelucid, you will have the opportunity to work on cutting-edge projects that are shaping the future of technology.
+            </p>
+            </div>
+            </section>
+            
+
+  
+ 
+ </body>
+</html>
