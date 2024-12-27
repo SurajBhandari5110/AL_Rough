@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets/css/style.css"><link rel="preload" href="assets/css/fonts/thicccboi.css" as="style" onload="this.rel='stylesheet'">
 
-
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -139,12 +137,200 @@
             .award-wrapper[data-prize="giftcard"]::after {
                 background-image: url('https://placehold.co/600x400?text=Gift+Card+Prize');
             }
-        
+            * {
+              font-family: "Montserrat", sans-serif !important;
+      
+      
+          }
+      
+          @media only screen and (max-width: 600px) {
+              
+              .bttn{
+                  margin-top:-150px !important;
+              }
+              
+              .tabcontent{
+          
+          max-height:380px;
+      }
+              
+              .mob-view{
+                  text-align:center !important;
+              }
+              
+              .wid{
+                  min-width:450px !important;
+              }
+              
+              .leader{
+                  margin-top:-160px;
+                  margin-left:80px;
+              }
+              
+              .leader span{
+              font-size:12px;
+              }
+              
+              .leader h3{
+                  font-size:14px;
+              }
+              
+              .leader p{
+                  font-size:10px;
+              }
+              
+              
+      .leaderimg{ 
+      margin-top:50px;
+      
+      }        
+              
+              .con-right{
+                  
+                  max-width:480px;
+              }
+              
+              .mv{
+                  flex-direction:column;
+              }
+              
+              .left-hidden{
+                  display:none !important;
+              }
+              
+              .flex-grow button{
+                  font-size:12px !important;
+                  font-weight:bold;
+              }
+              
+              .video-container {
+                  min-height: 80vh
+              }
+              
+              
+      
+              .image-section {
+                  top: 50%;
+                  max-width: 200px;
+              }
+      
+              .text-section {
+                  min-width: 80%;
+                  top: 50%;
+                  left: 5px;
+      
+              }
+      
+              .text-section p {
+                  font-size: 10px;
+              }
+      
+              .image-section {
+                  display: none
+              }
+      
+              /************************ */
+      
+              .techn {
+      
+                  display: flex;
+                  flex-direction: column
+              }
+      
+              .techn img {
+                  max-width: 50%;
+                  margin: 0px auto
+              }
+      
+      
+          }
+      
+          .video-container {
+              width: 100%;
+              max-height: 90vh;
+              /* Adjust the maximum height */
+              /*background: #000c15;*/
+              position: relative;
+              overflow: hidden;
+              /* Ensure overflow doesn't overlap */
+              border-bottom:10px solid #dd2f0d;
+              border-bottom-right-radius:250px;
+              border-bottom-left-radius:0px;
+          }
+      
+          .video2 {
+              width: 100%;
+              height: 100vh;
+              /* Change to auto to maintain aspect ratio */
+              opacity: 9;
+              object-fit: cover;
+          }
+      
+          .video-container::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(90deg, rgba(0, 2, 6, 0.8) 14%, rgba(6, 133, 168, 0) 100%);
+          }
+      
+          .text-section {
+              /*width: 40%;*/
+              position: absolute;
+              top: 50%;
+              left: 5%;
+              /* Adjust as needed */
+              transform: translateY(-45%);
+              /* Adjust background color and opacity */
+              padding: 20px;
+          }
+      
+          .image-section {
+              position: absolute;
+              display: none;
+              top: 50%;
+              width: 650px;
+              transform: translateY(-50%);
+              right: 5%;
+          }
+      
+          .image-section img {
+              animation: moveUpDown 2s ease-in-out infinite;
+              /* Adjust timing and animation behavior as needed */
+          }
+      
+          @keyframes moveUpDown {
+              0% {
+                  transform: translateY(0);
+              }
+      
+              50% {
+                  transform: translateY(-20px);
+                  /* Move up */
+              }
+      
+              100% {
+                  transform: translateY(0);
+                  /* Move down to initial position */
+              }
+          }
+          .typewriter-text {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 100px;
+            animation: blinkCursor 2.75s steps(1) infinite;
+        }
     
  </style>
  </head>
 <body>
-   
+ 
+
+
+    
+</div>
  <div class="content-wrapper">  <header class="wrapper bg-soft-primary">
     <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
       <div class="container flex-lg-row flex-nowrap align-items-center">
@@ -419,6 +605,18 @@
    </div>
   </nav>
   <section class="hero-section">
+    <div class="video-container">
+      <video class="video2" autoplay="" loop="" muted="" playsinline="">
+          <source src="assets/s25.mp4" type="video/mp4">
+      </video>
+      <!-- <div class="overlay"></div> Black overlay -->
+  
+     <div class="text-section">
+         <div class="ani" style="color:white;font-size:2.5em">
+  <span>Coming together is<br> a</span>
+  <span id="dynamic-text" class="typewriter-text">SUCCESS</span>
+  </div>
+  </div>
    
    
   </section>
@@ -693,6 +891,108 @@
             </p>
             </div>
             </section>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                  const word1 = document.getElementById('word1');
+                  const word2 = document.getElementById('word2');
+                  const word3 = document.getElementById('word3');
+              
+                  word1.style.animation = 'none';
+                  word2.style.animation = 'none';
+                  word3.style.animation = 'none';
+              
+                  setTimeout(() => {
+                      word1.style.animation = '';
+                  }, 500); // Delay for the first word
+              
+                  setTimeout(() => {
+                      word2.style.animation = '';
+                  }, 4000); // Additional delay for the second word
+              
+                  setTimeout(() => {
+                      word3.style.animation = '';
+                  }, 7500); // Additional delay for the third word
+              });
+              
+              /**
+              This code was not writen by me
+              */
+              var TxtType = function (el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = "";
+                this.tick();
+                this.isDeleting = false;
+              };
+              
+              TxtType.prototype.tick = function () {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+              
+                if (this.isDeleting) {
+                  this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                  this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+              
+                this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+              
+                var that = this;
+                var delta = 200 - Math.random() * 100;
+              
+                if (this.isDeleting) {
+                  delta /= 2;
+                }
+              
+                if (!this.isDeleting && this.txt === fullTxt) {
+                  delta = this.period;
+                  this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === "") {
+                  this.isDeleting = false;
+                  this.loopNum++;
+                  delta = 500;
+                }
+              
+                setTimeout(function () {
+                  that.tick();
+                }, delta);
+              };
+              
+              const words = ['BEGINNING', 'PROGRESS', 'SUCCESS'];
+              let index = 0;
+              
+              function typeWord(word) {
+                  const dynamicText = document.getElementById('dynamic-text');
+                  let i = 0;
+                  dynamicText.textContent = '';
+              
+                  const typing = setInterval(() => {
+                      if (i < word.length) {
+                          dynamicText.textContent += word.charAt(i);
+                          i++;
+                      } else {
+                          clearInterval(typing);
+                          setTimeout(() => {
+                              if (index === words.length - 1) {
+                                  index = 0; // Reset to loop
+                              } else {
+                                  index++;
+                              }
+                              typeWord(words[index]); // Start next word
+                          }, 2000); // Wait before starting next word
+                      }
+                  }, 150); // Speed of typing each character
+              }
+              
+              document.addEventListener('DOMContentLoaded', () => {
+                  typeWord(words[index]);
+              });
+              
+              
+              
+              </script>
             
 
   
